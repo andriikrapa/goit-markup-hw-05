@@ -702,6 +702,10 @@ footer {
     border: 1px solid #EEEEEE;
 }
 
+.portfolio-item li:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /* Конец Вариант №3 размещения item портфолио */
 
 
@@ -720,6 +724,7 @@ footer {
 
 .portfolio-item a > p{
     padding-left: 24px;
+    padding-bottom: 20px;
 }
 
 .portfolio-item-img{
@@ -750,12 +755,13 @@ footer {
     transition: transform 250ms ease;
 }
 
-.portfolio-item-img:hover .portfolio-item-active-paragraph{
+.portfolio-item a:hover .portfolio-item-active-paragraph,
+.portfolio-item a:focus .portfolio-item-active-paragraph{
     transform: translateX(0);
 }
 
 .portfolio-item p{
-    margin-top: 0;
+    margin: 0;
 }
 
 
