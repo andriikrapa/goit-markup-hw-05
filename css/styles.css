@@ -60,7 +60,7 @@ h3{
 }
 
 img {
-    display: block; /* с помощью задания картинке свойства блочного элемента, убирает дополнительный отступ у картинок (не маржин, не падинг) */
+    display: block; /* с помощью задания картинке свойства блочного элемента, убираем дополнительный отступ у картинок (не маржин, не падинг) */
 }
 
 footer {
@@ -162,6 +162,8 @@ footer {
 .site-nav.list a:hover,
 .site-nav.list a:focus{
     color: var(--accent-color);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav.current a{
@@ -208,6 +210,8 @@ footer {
 .address a:focus{
     color: var(--accent-color);
     fill: var(--accent-color)
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-mail svg{
@@ -437,6 +441,8 @@ footer {
 .our-team-social-list a:focus{
     background-color:var(--accent-color);
     fill: var(--primary-bg-color);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Section Our Clients */
@@ -477,6 +483,8 @@ footer {
 .our-clients a:focus{
     border-color: var(--accent-color); 
     fill: var(--accent-color);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Footer */
@@ -539,6 +547,8 @@ footer {
 .footer-join-us a:focus{
     background-color:var(--accent-color);
     fill: var(--primary-bg-color);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer-subscribe-form */
@@ -641,6 +651,8 @@ footer {
     cursor: pointer;
 
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Portfolio Items */
@@ -704,6 +716,8 @@ footer {
 
 .portfolio-item li:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Конец Вариант №3 размещения item портфолио */
@@ -715,16 +729,10 @@ footer {
 }
 .portfolio-item h3{
     text-transform: capitalize;
-    margin-top: 20px;
-    margin-bottom: 4px;
+    padding-bottom: 4px;
     font-size: 18px;
     line-height: 2;
-    padding-left: 24px;
-}
-
-.portfolio-item a > p{
-    padding-left: 24px;
-    padding-bottom: 20px;
+    margin: 0;
 }
 
 .portfolio-item-img{
@@ -748,22 +756,25 @@ footer {
     width: 100%;
     height: 100%;
 
-    transform: translate(-50%, -50%);
-
     /* overflow: auto; */
     transform: translateY(100%);
 
-    transition: 250ms;
-    /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item a:hover .portfolio-item-active-paragraph,
 .portfolio-item a:focus .portfolio-item-active-paragraph{
     transform: translateX(0);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item p{
     margin: 0;
+}
+
+.portfolio-item-title{
+    padding: 20px 24px;
 }
 
 
