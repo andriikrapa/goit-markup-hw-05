@@ -31,6 +31,9 @@ body{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+
+    /* header fixed */
+    /* padding-top: 79px; */
 }
 
 .link{
@@ -61,10 +64,6 @@ h3{
 
 img {
     display: block; /* с помощью задания картинке свойства блочного элемента, убираем дополнительный отступ у картинок (не маржин, не падинг) */
-}
-
-footer {
-    background-color: #2F303A;;
 }
 
 .footer.list{
@@ -117,6 +116,14 @@ footer {
 .page-header{
     font-weight: 500;
     letter-spacing: 0.02em;
+    
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.97);
+    outline: 1px solid var(--primary-text-color); */
 }
 
 .contener{
@@ -488,6 +495,10 @@ footer {
 }
 
 /* Footer */
+
+footer {
+    background-color: #2F303A;
+}
 
 .footer.contener{
     padding-top: 60px;
